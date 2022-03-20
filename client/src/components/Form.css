@@ -1,0 +1,281 @@
+.formDiv {
+  justify-content: center;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(128, 126, 126);
+  padding: 50px;
+  margin: auto;
+  border-radius: 15px;
+}
+.certify input[type="text"],
+select {
+  display: block;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.issuer input[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+button {
+  justify-content: center;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  left: 57%;
+  top: 80px;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(10, 6, 19) 8%,
+    rgb(3, 1, 6) 8%,
+    rgb(9, 6, 15) 8%,
+    rgb(8, 6, 14) 8%
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(113, 60, 211) 8%;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media all and (max-width: 30em) {
+  .button {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+span[role="button"] {
+  display: table-cell;
+  font-family: Arial;
+  font-size: 1rem;
+  padding: 8px 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 2px solid #265986;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #265986;
+  outline: none;
+}
+span[role="button"]:hover,
+span[role="button"]:focus {
+  box-shadow: 0 0 5px #595959;
+  background-color: #183a57;
+  border-color: #265986;
+  outline: 2px solid transparent;
+}
+#fileupload {
+  display: none;
+}
+.upload {
+  display: table-row;
+  width: 40rem;
+}
+input {
+  display: table-cell;
+  margin-left: -5px;
+  width: 80%;
+  font-family: Arial;
+  font-size: 1rem;
+  padding: 25px 8px;
+  border-radius: 20px;
+  border: 1px solid #999b9c;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  text-align: left;
+  -webkit-rtl-ordering: left;
+}
+::-webkit-file-upload-button {
+  color: rgb(233, 230, 236);
+  background-color: #7f4cc2;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px;
+
+  float: right;
+}
+x::-webkit-file-upload-button,
+input[type="file"]:after {
+  content: "";
+  left: 100%;
+  margin-left: 3px;
+  position: relative;
+  -webkit-appearance: button;
+  padding: 3px 8px 2px;
+  border: 0px;
+}
+
+input:focus {
+  box-shadow: 0 0 5px #595959;
+  border-color: #265986;
+  outline: 2px solid transparent;
+}
+
+.submit {
+  justify-items: auto;
+  margin: auto;
+}
+
+.name1 {
+  display: inline-block;
+  width: 60%;
+  height: 90%;
+  font-size: x-large;
+}
+.name2 {
+  /* Other styling... */
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+  font-size: x-large;
+}
+#parent {
+  width: 100%;
+  height: 50px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+#parent1 {
+  width: 100%;
+  height: 140px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.name3 {
+  display: inline-block;
+  width: 60%;
+  height: 10%;
+}
+.name4 {
+  display: inline-block;
+  width: 40%;
+  height: 10%;
+}
+#name5 {
+  display: flex;
+  width: 50%;
+}
+.formDiv {
+  width: 80%;
+}
+@media only screen and (max-width: 768px) {
+  [class*="formDiv"] {
+    width: 80%;
+  }
+  [class*="parent1"] {
+    width: 80%;
+  }
+}
